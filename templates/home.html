@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyPlace</title>
+</head>
+<body>
+<div>
+    <h2>Hello! {{ user }}</h2>
+    <div>
+        <ul style="display: inline-flex;list-style: none;">
+            <li style="margin: 0 1rem;"><a href="/user">Get user</a></li>
+            <li style="margin: 0 1rem;"><a href="/repo">Get repo</a></li>
+            <li style="margin: 0 1rem;"><a href="/pushFile">Push a file</a></li>
+            {% if user %}
+                <li style="margin: 0 1rem;"><a href="/logout">Logout</a></li>
+            {% else %}
+                <li style="margin: 0 1rem;"><a href="/login">Login</a></li>
+            {% endif %}
+        </ul>
+    </div>
+
+
+    <div style="width: 20%; float: left">
+        <ul>
+            <li>haha</li>
+        </ul>
+    </div>
+    <div>
+        <h3>hello</h3>
+    </div>
+</div>
+</body>
+</html>
